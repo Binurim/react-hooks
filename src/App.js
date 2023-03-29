@@ -1,6 +1,7 @@
 import './App.css';
 import CounterHook from './components/CounterHook';
 import DigitalClock from './components/DigitalClock';
+import MemoContainer from './components/memoHook/MemoContainer';
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <CounterHook/>
       <hr/>
       <DigitalClock/>
+      <hr/>
+      <MemoContainer/>
     </div>
   );
 }
