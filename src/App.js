@@ -5,6 +5,7 @@ import MemoContainer from './components/memoHook/MemoContainer';
 import Purchase from './redux-components/Purchase';
 import Cart from './redux-components/Cart';
 import Total from './redux-components/Total';
+import PurchaseClass from './redux-components/PurchaseClass';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
 
       {/* Components related redux */}
       <Purchase/>
-      <hr/>      
+      <hr/>  
+      <PurchaseClass/>
+      <hr/>    
       <Cart/>
       <hr/>      
       <Total/>
