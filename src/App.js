@@ -19,8 +19,11 @@ function App() {
       {/* Components related redux */}
       <Purchase/>
       <hr/>  
+
+      {/* Class component with redux */}
       <PurchaseClass/>
-      <hr/>    
+      <hr/>  
+        
       <Cart/>
       <hr/>      
       <Total/>
