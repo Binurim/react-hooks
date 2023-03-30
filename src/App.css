@@ -1,7 +1,31 @@
 .App {
   text-align: center;
+  display: inline-block;
 }
 
 li {
   cursor: pointer;
+  list-style-type: none;;
+}
+
+.card{
+  width: 18rem;
+  height: 13rem !important;
+}
+
+.btn{
+  color: white !important;
+  width: 10rem;
+}
+
+.counterBtn{
+  width: 5rem;
+}
+
+.toggleBtn{
+  align-self: center;
+}
+
+.navbar{
+  height:2.5rem;
 }

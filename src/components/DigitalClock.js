@@ -9,9 +9,12 @@ export default function DigitalClock() {
   });
 
   return (
-    <div>
-      <h1>Digital Clock</h1>
-      <h2>{time}</h2>
+    <div className="card">
+      <div className="card-header">
+        <h4>Digital Clock</h4>
+      </div>
+      <h5>{time}</h5>
+      <br />
     </div>
   );
 }

@@ -10,17 +10,19 @@ const Purchase = () => {
     dispatch({ type: "PURCHASE", payload: obj });
   };
   return (
-    <div>
-      <h3>Purchase Component</h3>
-      <select onChange={(e) => purchaseHandler(e)}>
-        {products.map((product, index) => {
-          return (
-            <option value={product.price} key={index}>
-              {product.pName} - ${product.price}
-            </option>
-          );
-        })}
-      </select>
+    <div className="card">
+      <h5 className="card-header">Purchase Component</h5>
+      <div className="card-body">
+        <select onChange={(e) => purchaseHandler(e)}>
+          {products.map((product, index) => {
+            return (
+              <option value={product.price} key={index}>
+                {product.pName} - ${product.price}
+              </option>
+            );
+          })}
+        </select>
+      </div>
     </div>
   );
 };

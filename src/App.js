@@ -10,23 +10,41 @@ import PurchaseClass from './redux-components/PurchaseClass';
 function App() {
   return (
     <div className="App">
-      {/* <CounterHook/>
-      <hr/>
-      <DigitalClock/>
-      <hr/>
-      <MemoContainer/> */}
+      <br />
+      <h3>React Hooks - Sample Tryouts</h3>
+      <br/>
+      <div className="row">
+        <div className="col-lg-4">
+          <CounterHook />
+        </div>
+        <div className="col-lg-4">
+          <DigitalClock />
+        </div>
+        <div className="col-lg-4">
+        <MemoContainer />
+        </div>
+      </div>
 
+      <hr />
+      <h3>React/Redux/Hooks - Sample Tryouts</h3>
+      <br/>
       {/* Components related redux */}
-      <Purchase/>
-      <hr/>  
-
-      {/* Class component with redux */}
-      <PurchaseClass/>
-      <hr/>  
-        
-      <Cart/>
-      <hr/>      
-      <Total/>
+      <div className="row">
+        <div className="col-lg-3">
+          <Purchase />
+        </div>
+        <div className="col-lg-3">
+          {/* Class component with redux */}
+          <PurchaseClass />
+        </div>
+        <div className="col-lg-3">
+          <Cart />
+        </div>
+        <div className="col-lg-3">
+          <Total />
+        </div>
+      </div>
+      <br/>
     </div>
   );
 }

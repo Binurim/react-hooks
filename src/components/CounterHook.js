@@ -17,13 +17,36 @@ function CounterHook() {
     }
   };
   return (
-    <div>
-      <h1>Counter : {cObj.count}</h1>
-      <button onClick={() => countHandler("+")}>+</button>
-      <button onClick={() => countHandler("-")}>-</button>
-      <h2>{cObj.flag.toString()}</h2>
-      <button onClick={() => setCounter({ ...cObj, flag: !cObj.flag })}>
-        toggle
+    <div className="card">
+      <div className="card-header">
+        <h4>Counter</h4>
+      </div>
+      <h5>Counter Value: {cObj.count}</h5>
+      <div className="row">
+        <div className="col-sm-6">
+          <button
+            className="btn btn-info counterBtn"
+            onClick={() => countHandler("+")}
+          >
+            +
+          </button>
+        </div>
+
+        <div className="col-sm-6">
+          <button
+            className="btn btn-info counterBtn"
+            onClick={() => countHandler("-")}
+          >
+            -
+          </button>
+        </div>
+      </div>
+      <h5>Flag: {cObj.flag.toString()}</h5>
+      <button
+        className="btn btn-info toggleBtn"
+        onClick={() => setCounter({ ...cObj, flag: !cObj.flag })}
+      >
+        Toggle
       </button>
     </div>
   );

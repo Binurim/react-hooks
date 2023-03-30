@@ -8,13 +8,22 @@ const Cart = () => {
   }
   
   return (
-    <div>
-      <h3>Cart Component</h3>
-      <ul>
-        {cart.map((product, index) => {
-          return <li key={index} onClick={()=>deleteHandler(index, product.price)}>{product.pName} </li>;
-        })}
-      </ul>
+    <div className="card">
+      <h5 className="card-header">Cart Component</h5>
+      <div className="card-body">
+        <ul>
+          {cart.map((product, index) => {
+            return (
+              <li
+                key={index}
+                onClick={() => deleteHandler(index, product.price)}
+              >
+                {product.pName}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

@@ -23,10 +23,12 @@ export default function MemoContainer() {
   return (
     <div>
       <Header />
-      <DisplayCounter counter={count} />
-      <DisplayFlag flag={flag} />
-      <Button caption={"Change count"} click={changeCounter} />
-      <Button caption={"Change flag"} click={changeFlag} />
+      <div className="card" style={{ margin: "auto" }}>
+        <DisplayCounter counter={count} />
+        <Button caption={"Change count"} click={changeCounter} />
+        <DisplayFlag flag={flag} />
+        <Button caption={"Change flag"} click={changeFlag} />
+      </div>
       <Footer />
     </div>
   );

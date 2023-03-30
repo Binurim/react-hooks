@@ -3,7 +3,7 @@ import React from "react";
 function DisplayFlag(props) {
   return (
     <div>
-      <h1>Flag: {props.flag.toString()}</h1>
+      <h5>Flag: {props.flag.toString()}</h5>
     </div>
   );
 }

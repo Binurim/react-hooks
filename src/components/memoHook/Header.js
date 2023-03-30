@@ -1,9 +1,15 @@
 import React from "react";
 
 function Header() {
-    return(
-        <div>This is header</div>
-    )
+    return (
+      <div>
+        <nav className="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <h6>Header</h6>
+          </a>
+        </nav>
+      </div>
+    );
 }
 
 /**
